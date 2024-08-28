@@ -90,3 +90,76 @@ Start the FastAPI server with Uvicorn:
 
 ```bash
 uvicorn main:app --reload
+
+API Documentation
+Visit http://127.0.0.1:8000/docs to access the Swagger UI, which provides an interactive interface for testing the API endpoints.
+
+Usage
+Register a User: Create a new user account by making a POST request to /users/ with the user's details.
+
+Log In: Obtain a JWT token by making a POST request to /token with the user's email and password.
+
+Manage To-Do Items:
+
+Create: POST /todos/ with a JSON payload containing title and description.
+Read: GET /todos/ to fetch all to-do items.
+Update: PUT /todos/{todo_id} with a JSON payload to update a specific to-do item.
+Delete: DELETE /todos/{todo_id} to remove a to-do item.
+Example Requests
+Register User:
+
+bash
+Copy code
+curl -X 'POST' \
+  'http://127.0.0.1:8000/users/' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "username": "testuser",
+  "email": "testuser@example.com",
+  "password": "yourpassword"
+}'
+Login User:
+
+bash
+Copy code
+curl -X 'POST' \
+  'http://127.0.0.1:8000/token' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'username=testuser@example.com&password=yourpassword'
+Create To-Do:
+
+bash
+Copy code
+curl -X 'POST' \
+  'http://127.0.0.1:8000/todos/' \
+  -H 'Authorization: Bearer your_jwt_token' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "title": "Sample To-Do",
+  "description": "This is a sample to-do item."
+}'
+Contributing
+If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are welcome.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+For any inquiries or feedback, please reach out to yourname@example.com.
+
+Note: Replace yourusername with your actual GitHub username and update the email address in the Contact section.
+
+markdown
+Copy code
+
+### How to Use This README
+
+- **Customize**: Replace placeholders such as `yourusername` and `your_secret_key` with actual values specific to your setup.
+- **Expand**: Add additional sections or details as needed based on your project’s complexity or specific setup instructions.
+- **Format**: Make sure the Markdown syntax renders correctly on GitHub by previewing the file on your repository page.
+
+
+
+
+
+
