@@ -101,7 +101,7 @@ Log In: Obtain a JWT token by making a POST request to /token with the user's em
 
 Manage To-Do Items:
 
-Create: POST /todos/ with a JSON payload containing title and description.
+Create POST /todos/ with a JSON payload containing title and description.
 Read: GET /todos/ to fetch all to-do items.
 Update: PUT /todos/{todo_id} with a JSON payload to update a specific to-do item.
 Delete: DELETE /todos/{todo_id} to remove a to-do item.
@@ -114,9 +114,9 @@ curl -X 'POST' \
   'http://127.0.0.1:8000/users/' \
   -H 'Content-Type: application/json' \
   -d '{
-  "username": "testuser",
+  "username": "test user",
   "email": "testuser@example.com",
-  "password": "yourpassword"
+  "password": "your password"
 }'
 Login User:
 
@@ -124,7 +124,7 @@ bash
 Copy code
 curl -X 'POST' \
   'http://127.0.0.1:8000/token' \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Content-Type: application/x-www-form-URL-encoded' \
   -d 'username=testuser@example.com&password=yourpassword'
 Create To-Do:
 
@@ -141,16 +141,11 @@ curl -X 'POST' \
 Contributing
 If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are welcome.
 
-License
-This project is licensed under the MIT License.
-
 Contact
-For any inquiries or feedback, please reach out to yourname@example.com.
+For any inquiries or feedback, please reach out to eugenemahaso@gmail.com.
 
-Note: Replace yourusername with your actual GitHub username and update the email address in the Contact section.
+Note: Replace your username with your actual GitHub username and update the email address in the Contact section.
 
-markdown
-Copy code
 
 ### How to Use This README
 
