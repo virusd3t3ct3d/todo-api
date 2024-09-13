@@ -63,7 +63,7 @@ This project is a To-Do List API built using FastAPI, MySQL, and JWT-based authe
     Create a `.env` file in the project root and add the following environment variables. Replace the placeholders with your actual MySQL credentials and secret key:
 
     ```env
-    DATABASE_URL=mysql+mysqlconnector://username:password@localhost/todo_db
+    DATABASE_URL=mysql+mysqlconnector://root:@127.0.0.1:3306/todoapi
     SECRET_KEY=your_secret_key
     ```
 
@@ -144,7 +144,6 @@ If you'd like to contribute to this project, please fork the repository and use 
 Contact
 For any inquiries or feedback, please reach out to eugenemahaso@gmail.com.
 
-Note: Replace your username with your actual GitHub username and update the email address in the Contact section.
 
 
 ### How to Use This README
