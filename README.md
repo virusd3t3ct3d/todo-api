@@ -31,7 +31,7 @@ This project is a To-Do List API built using FastAPI, MySQL, and JWT-based authe
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/yourusername/todo_app.git
+    git clone https://github.com/virusd3t3ct3d/todo_app.git
     cd todo_app
     ```
 
